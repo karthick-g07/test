@@ -117,18 +117,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 import os
 
-<<<<<<< HEAD
-import os
-=======
->>>>>>> bdec87e56adf9500c8848ce82831f3d5d1830bbd
-STATIC_URL='static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-MEDIA_URLS ='/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-<<<<<<< HEAD
-=======
 
->>>>>>> bdec87e56adf9500c8848ce82831f3d5d1830bbd
+# settings.py
+
+STATIC_URL = '/static/'
+
+# This directory will store static files after the collectstatic command
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')  # or 'staticfiles_build' based on your setup
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
